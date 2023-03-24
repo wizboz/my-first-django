@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <div class="container text-center">
-    <h1>Welcome my first Django web site!</h1>
+    <h1 class="text-success">Welcome my first Django web site!</h1>
+    <p>Enter your name and click the button</p>
+        <form action="{% url 'hello' %}">
+            <input type="text" placeholder="Enter your number" name="number">
+            <input type="text" placeholder="Enter your name" name="name">
+            <input type="submit" value="Say hello" class="btn btn-danger" style="color: black">
+        </form>
 </div>
